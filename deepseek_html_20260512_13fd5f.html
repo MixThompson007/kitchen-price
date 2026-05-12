@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ป้ายปรับราคา แผนกเครื่องครัว</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Sarabun', sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 700px; margin: 0 auto; background: white; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { background: #FF6B35; color: white; text-align: center; padding: 20px; border-radius: 10px; margin-bottom: 25px; }
+        .header h1 { font-size: 28px; margin-bottom: 5px; }
+        .header .date { font-size: 14px; opacity: 0.9; }
+        .product-card { background: #fff; border: 2px solid #eee; border-radius: 12px; padding: 20px; margin-bottom: 15px; transition: 0.3s; }
+        .product-card:hover { border-color: #FF6B35; box-shadow: 0 4px 12px rgba(255,107,53,0.2); }
+        .product-name { font-size: 20px; font-weight: bold; color: #333; margin-bottom: 10px; }
+        .price-box { display: flex; align-items: center; gap: 15px; margin-bottom: 8px; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 16px; }
+        .new-price { color: #FF6B35; font-size: 26px; font-weight: bold; }
+        .discount { background: #FFE0D3; color: #FF6B35; padding: 5px 12px; border-radius: 20px; font-size: 14px; font-weight: bold; }
+        .product-detail { color: #666; font-size: 15px; margin-top: 8px; }
+        .footer { text-align: center; margin-top: 25px; color: #999; font-size: 13px; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .header h1 { font-size: 24px; }
+            .product-name { font-size: 18px; }
+            .new-price { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧑‍🍳 ป้ายปรับราคา<br>แผนกเครื่องครัว</h1>
+            <div class="date">📅 ปรับปรุงล่าสุด: 26 พฤษภาคม 2026</div>
+        </div>
+
+        <!-- สินค้าที่ 1 -->
+        <div class="product-card">
+            <div class="product-name">🔪 ชุดมีดสแตนเลส 5 ชิ้น</div>
+            <div class="price-box">
+                <span class="old-price">฿2,490</span>
+                <span class="new-price">฿1,790</span>
+                <span class="discount">-28%</span>
+            </div>
+            <div class="product-detail">📦 มีดเชฟ + มีดหั่นผัก + มีดปอกผลไม้ + กรรไกร + บล็อกไม้<br>✅ รับประกัน 2 ปี</div>
+        </div>
+
+        <!-- สินค้าที่ 2 -->
+        <div class="product-card">
+            <div class="product-name">🍳 กระทะเทฟลอน 28 ซม. (รุ่นใหม่)</div>
+            <div class="price-box">
+                <span class="old-price">฿1,590</span>
+                <span class="new-price">฿990</span>
+                <span class="discount">-37%</span>
+            </div>
+            <div class="product-detail">🔹 เคลือบหินอ่อน ไม่ติดกระทะ<br>🔹 ใช้กับเตาแม่เหล็กไฟฟ้าได้<br>📦 แถมตะหลิวซิลิโคนฟรี!</div>
+        </div>
+
+        <!-- สินค้าที่ 3 -->
+        <div class="product-card">
+            <div class="product-name">🥘 หม้อสแตนเลสพร้อมฝา 3 ใบ</div>
+            <div class="price-box">
+                <span class="new-price">฿2,490</span>
+                <span class="discount">ราคาพิเศษ</span>
+            </div>
+            <div class="product-detail">📦 ขนาด 16 / 20 / 24 ซม. <br>✅ ก้นหม้อหนา 3 มม. เก็บความร้อนดีเยี่ยม</div>
+        </div>
+
+        <!-- เพิ่มสินค้าใหม่ตามตัวอย่างนี้ได้เลย -->
+        
+        <div class="footer">
+            📌 ราคานี้ใช้ได้ถึง 30 มิถุนายน 2026<br>
+            🛒 สอบถามเพิ่มเติม: แผนกเครื่องครัว ชั้น 2
+        </div>
+    </div>
+</body>
+</html>
